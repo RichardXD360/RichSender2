@@ -1,0 +1,77 @@
+@keyframes in-message{
+    0% {transform: translateY(10px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+body{
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    height: 100vh;
+    margin: 0;
+}
+section{
+    position: relative;
+    right: 140px;
+    top: -20px;
+}
+header{
+    text-align: center;
+    background-color: #001c2c;
+    color: white;
+    width: 400px;
+    height: 65px;
+}
+main{
+    text-align: center;
+    color: aliceblue;
+    background-color: #00749a;
+    width: 400px;
+    height: 500px;
+    /*height: calc(100vh - 160px);  Ajuste conforme necessário */
+    /*overflow: hidden;*/
+}
+footer{
+    width: 400px;
+    height: 80px;
+    background-color: #001c2c;
+    color: white;
+    border-radius: 0px 0% 90% 90%;
+}
+.status-circle{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    left: 20px;
+    top: 45px;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+.status-contact{
+    position: relative;
+    left: 18px;
+    bottom: 15px;
+}
+
+.chat-interativo {
+     cursor: pointer;
+     text-align: start;
+     animation-name: in-message;
+     animation-duration: 0.2s;
+     position: relative;
+     color: rgb(22, 46, 46);
+     border: 1px solid black;
+     border-radius: 15% 15px 15% 15px;
+     top: -0;
+     padding: 6px;
+     left: 10px;
+     background-color: #00ffff;
+     max-width: 180px;
+     }
+    
+     .chat-interativo:hover {
+     background-color: #0c2121;
+     }
+    
